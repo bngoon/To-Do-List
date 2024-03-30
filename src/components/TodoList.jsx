@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import TodoForm from './TodoForm.jsx'
 import Todo from './Todo.jsx';
-
+import './TodoList.css';
 function TodoList() {
   const [todos, setTodos] = useState([]);
 
@@ -13,7 +13,7 @@ function TodoList() {
 
 
 
-    
+
     const newTodos = [todo, ...todos]
 
     setTodos(newTodos)
